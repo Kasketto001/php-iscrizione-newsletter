@@ -22,7 +22,7 @@
                 <label for="email">Indirizzo email</label>
 
                 <!-- The type is set to text to check the proper functioning of the email validate filter. :D -->
-                <input type="text" class="form-control" id="email" name="email" placeholder="Inserisci il tuo indirizzo email" required> 
+                <input type="text" class="form-control" id="email" name="email" placeholder="Inserisci il tuo indirizzo email" value="<?php echo old('email'); ?>">
             </div>
             <button type="submit" class="btn btn-primary mt-2" name="submit">Iscriviti</button>
         </form>

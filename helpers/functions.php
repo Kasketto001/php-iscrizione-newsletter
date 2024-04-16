@@ -10,10 +10,19 @@ function handleSubscription() {
             $response['success'] = true;
             $response['message'] = $messaggio;
         } else {
-            $response['success'] = false;
+
             $response['message'] = "L'indirizzo email inserito non è valido.";
+            $_GET['email'] = $email;
         }
     }
     return $response;
+}
+
+function old($input_email) {
+    if(isset($_GET[$input_email])) {
+        return $_GET[$input_email];
+    } else {
+        return '';
+    }
 }
 ?>
